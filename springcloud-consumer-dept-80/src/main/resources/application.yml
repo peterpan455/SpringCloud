@@ -1,0 +1,6 @@
+# Eureka配置
+eureka:
+  client:
+    register-with-eureka: false # 不向 Eureka注册自己
+    service-url: # 从三个注册中心中随机取一个去访问
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
